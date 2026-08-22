@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Light Mode (Default) */
+    --bg-base: #FFFFFF;
+    --bg-surface: #FAFAFA;
+    --bg-surface-alt: #F4F4F5;
+    --border-subtle: #E4E4E7;
+    --text-primary: #18181B;
+    --text-secondary: #71717A;
+    --accent-bg: #18181B;
+    --accent-text: #FFFFFF;
+    --badge-bg: #18181B;
+    --badge-text: #FFFFFF;
+    --accent-border: #18181B;
+  }
+
+  .dark {
+    /* Dark Mode */
+    --bg-base: #000000;
+    --bg-surface: #09090B;
+    --bg-surface-alt: #121215;
+    --border-subtle: #27272A;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A1A1AA;
+    --accent-bg: #FFFFFF;
+    --accent-text: #000000;
+    --badge-bg: #FFFFFF;
+    --badge-text: #000000;
+    --accent-border: #FFFFFF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
